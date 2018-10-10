@@ -4,12 +4,13 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>GamificaSprint</title>
+		
+        <title>Gamifica_Sprint</title>
+		<link rel="icon" href="favicon.png" type="image/png">
+		<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">		
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <!-- Styles -->
         <style>
             html, body {
@@ -62,10 +63,67 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+			*  {
+			margin:0;
+			padding:0;
+			}
+
+			html, body {height:100%;}
+
+			.geral {
+				min-height:100%;
+				position:relative;
+				width:800px;
+			}
+
+			.footer {
+				position:absolute;
+				bottom:0;
+				width:100%;
+			}
+
+			.content {overflow:hidden;}
+			.aside {width:200px;}
+			.fleft {float:left;}
+			.fright {float:right;}
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+				<div class="btn-group-lg">
+					<button type="button" class="btn btn-primary">Jogador 1</button>
+					<button type="button" class="btn btn-primary">Jogador 2</button>
+					<button type="button" class="btn btn-primary">Jogador 3</button>
+					<button type="button" class="btn btn-primary">Jogador 4</button>
+				</div>
+			</nav>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="aside fleft">
+						<img src="{!! asset('svg/trofeu.svg') !!}">
+					</div>
+				</div>
+				<div class="col-sm-1">
+				</div>
+				<div class="left" class="col-sm-9">
+					<br></br>
+					<label>Pontos geral: </label>
+					<br></br>
+					<label>Classificação reputação: </label>
+					<br></br>
+					<label>etc: </label>
+					<br></br>
+					<label>etc: </label>
+				</div>
+			</div>
+		</div>
+		<div class="footer" align="center">
+			<a href="https://github.com/santhiagosdp"><img src="img/github.png" height="10" width="50" class="media-object  img-responsive img-thumbnail"></a>
+		</div>	
+	
+    <!--    <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -76,16 +134,18 @@
                     @endauth
                 </div>
             @endif
-
+			<img align="left"src="{!! asset('svg/trofeu.svg') !!}">
             <div class="content">
-                <div class="title m-b-md">
-                    GamificaSprint
-                </div>
+				<img align="left"src="{!! asset('svg/trofeu.svg') !!}">
 
                 <div class="links">
                     <a href="https://github.com/santhiagosdp">GitHub</a>
                 </div>
             </div>
-        </div>
+        </div> -->
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     </body>
 </html>
