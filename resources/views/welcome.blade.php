@@ -118,6 +118,7 @@
 					<label>etc: </label>
 				</div>
 			</div>
+			<hr noshade></hr>
 		</div>
 		<div class="footer" align="center">
 			<a href="https://github.com/santhiagosdp"><img src="img/github.png" height="10" width="50" class="media-object  img-responsive img-thumbnail"></a>
