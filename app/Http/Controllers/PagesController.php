@@ -16,12 +16,12 @@ class PagesController extends Controller
 				'statistics'        => 'true'
 				],
 		]); */
-		$client = \Gitlab\Client::create('http://gitlab.bitstudio.io/api/v4/issues')
+		/* $client = \Gitlab\Client::create('http://gitlab.bitstudio.io/api/v4/issues')
 		->authenticate('dzaGyDgJBw4_EqexA9sx', \Gitlab\Client::AUTH_URL_TOKEN)
 		;
 		$pager = new \Gitlab\ResultPager($client);
 		$issues = $pager->fetchall($client->api('issues'),'all',[null, ['state' => 'closed']]);
-		
+		 */
 		return view('welcome');
 	}
 }
