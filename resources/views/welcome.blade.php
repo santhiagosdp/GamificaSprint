@@ -89,15 +89,14 @@
         </style>
     </head>
     <body>
+	
+		<div class="container-fluid">
 			<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-				<button type="button" class="btn btn-outline-success my-2 my-sm-0">Jogador 1</button>
+				<button type="button" class="btn btn-primary">Jogador 1</button>
 				<button type="button" class="btn btn-primary">Jogador 2</button>
 				<button type="button" class="btn btn-primary">Jogador 3</button>
 				<button type="button" class="btn btn-primary">Jogador 4</button>
-			</nav>	
-	
-		<div class="container-fluid">
-
+			</nav>
 			
 		<div class="content">
 		<hr noshade></hr>
