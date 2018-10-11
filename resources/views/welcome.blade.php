@@ -89,33 +89,55 @@
         </style>
     </head>
     <body>
+			<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+				<button type="button" class="btn btn-outline-success my-2 my-sm-0">Jogador 1</button>
+				<button type="button" class="btn btn-primary">Jogador 2</button>
+				<button type="button" class="btn btn-primary">Jogador 3</button>
+				<button type="button" class="btn btn-primary">Jogador 4</button>
+			</nav>	
+	
 		<div class="container-fluid">
-			<nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
-				<div class="btn-group-lg">
-					<button type="button" class="btn btn-primary">Jogador 1</button>
-					<button type="button" class="btn btn-primary">Jogador 2</button>
-					<button type="button" class="btn btn-primary">Jogador 3</button>
-					<button type="button" class="btn btn-primary">Jogador 4</button>
-				</div>
-			</nav>
+
+			
 		<div class="content">
+		<hr noshade></hr>
+		
 			<div class="row">
-				<div class="col-sm-2">
-					<div class="aside fleft">
-						<img src="{!! asset('svg/trofeu.svg') !!}">
+				<div class="col-sm-3">
+					<div class="card" style="width:400px">
+					  <img class="card-image" src="svg/trofeu.svg" alt="image">
+					  <div class="card-body">
+						<h4 class="card-title">John Doe</h4>
+						<p class="card-text">Some example text.</p>
+						<a href="#" class="btn btn-primary">See Profile</a>
+					  </div>
 					</div>
 				</div>
-				<div class="col-sm-1">
+				
+				<div class="col-sm-1"></div>
+				
+				<div class="col-sm-3">
+<div class="card" style="width:400px">
+  <img class="card-image" src="svg/trofeu.svg" alt="image">
+  <div class="card-body">
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text.</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
 				</div>
-				<div class="left" class="col-sm-9">
-					<br></br>
-					<label>Pontos geral: </label>
-					<br></br>
-					<label>Classificação reputação: </label>
-					<br></br>
-					<label>etc: </label>
-					<br></br>
-					<label>etc: </label>
+				
+				<div class="col-sm-1"></div>
+				
+				<div class="col-sm-3">
+<div class="card" style="width:400px">
+  <img class="card-image" src="svg/trofeu.svg" alt="image">
+  <div class="card-body">
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text.</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
 				</div>
 			</div>
 			<hr noshade></hr>
