@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var gitlab = require('node-gitlab');
+//var gitlab = require('node-gitlab');
+var Gitlab = require('node-gitlab-api/dist/latest');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -9,14 +10,18 @@ router.get('/', function(req, res, next) {
 		t = req.query.title;
 	}
 	
-	//acesso a API GITLAB
-	var client = gitlab.create({
+	/* //acesso a API GITLAB
+	 var client = gitlab.create({
 	  api: 'http://gitlab.bitstudio.io/api/v4/',
 	  privateToken: 'dzaGyDgJBw4_EqexA9sx'
 	});
-	var t= client.milestone.list({id: 1}, function (err, milestones) {
+	client.milestone.list({id: 1}, function (err, milestones) {
 	  console.log(milestones);
-	});
+	});  */
+  const api = new Gitlab({
+  url:   'http://gitlab.bitstudio.io/api/v4/', // Defaults to http://gitlab.com
+  token: 'dzaGyDgJBw4_EqexA9sx'	//Can be created in your profile. 
+})
   
 	
   

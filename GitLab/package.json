@@ -12,6 +12,7 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
-    "node-gitlab": "^1.6.0"
+    "node-gitlab": "^1.6.0",
+    "node-gitlab-api": "^3.0.2"
   }
 }
