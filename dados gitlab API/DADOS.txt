@@ -1,0 +1,4 @@
+$config['api_url'] = "http://gitlab.bitstudio.io/api/v4/";
+
+
+$config['gitlab_token'] = "dzaGyDgJBw4_EqexA9sx";
