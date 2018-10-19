@@ -1,0 +1,19 @@
+{
+    "name" : "cnam/gitlab-api",
+    "description" : "Sdk for integration gitlab api",
+    "minimum-stability": "beta",
+    "authors": [
+        {
+            "name": "Anton Popov",
+            "email": "cnam812@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4" : {
+            "Gitlab\\" : "src/Gitlab/"
+        }
+    },
+    "require": {
+        "guzzle/guzzle": "v3.8.1"
+    }
+}
