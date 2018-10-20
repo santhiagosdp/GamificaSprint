@@ -1,8 +1,0 @@
-$client = new Client(['base_uri' => 'https://gitlab.com/']);
-$projects = $client->request('GET', 'api/v4//projects/PROJECT_ID?statistics=true',
-[
-    'headers' => [
-        'PRIVATE-TOKEN'     => 'TOKEN',
-        'statistics'        => 'true'
-        ],
-]);
