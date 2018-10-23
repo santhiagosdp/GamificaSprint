@@ -2,3 +2,8 @@ $config['api_url'] = "http://gitlab.bitstudio.io/api/v4/";
 
 
 $config['gitlab_token'] = "dzaGyDgJBw4_EqexA9sx";
+
+zu5-RDVygKduky5yjxmt - santhiago bitstudio
+{!! json_decode($response) !!}
+
+composer create-project laravel/laravel aprendendo-laravel --prefer-dist
