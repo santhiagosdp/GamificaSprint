@@ -89,55 +89,80 @@
         </style>
     </head>
     <body>
+	
 		<div class="container-fluid">
-			<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+			 <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
 				<button type="button" class="btn btn-primary">Jogador 1</button>
 				<button type="button" class="btn btn-primary">Jogador 2</button>
 				<button type="button" class="btn btn-primary">Jogador 3</button>
 				<button type="button" class="btn btn-primary">Jogador 4</button>
 			</nav> 			
-			<div class="content">
-				<hr noshade></hr>
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="card" style="width:400px">
-							<img class="card-image" src="svg/trofeu.svg" alt="image">
-							<div class="card-body">
-								<h4 class="card-title">Id projeto: {{ $projectsArray[0]["id"] }}</h4>
-									<p class="card-text">Nome: {{ $projectsArray[0]["owner"]["name"] }}</p>
-									<a href="#" class="btn btn-primary"></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-1"></div>
-					<div class="col-sm-3">
-						<div class="card" style="width:400px">
-						  <img class="card-image" src="svg/trofeu.svg" alt="image">
-							<div class="card-body">
-								<h4 class="card-title">Id projeto: {{ $projectsArray[2]["id"] }}</h4>
-									<p class="card-text">Nome: {{ $projectsArray[2]["owner"]["name"] }}</p>
-									<a href="#" class="btn btn-primary"></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-1"></div>
-					<div class="col-sm-3">
-						<div class="card" style="width:400px">
-							<img class="card-image" src="svg/trofeu.svg" alt="image">
-							<div class="card-body">
-								<h4 class="card-title">Id projeto: {{ $projectsArray[1]["id"] }}</h4>
-									<p class="card-text">Nome: {{ $projectsArray[1]["owner"]["name"] }}</p>
-									<a href="#" class="btn btn-primary"></a>
-							</div>
-						</div>
+		<div class="content">
+		<hr noshade></hr>
+		
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="card" style="width:400px">
+					  <img class="card-image" src="svg/trofeu.svg" alt="image">
+					  <div class="card-body">
+						<h4 class="card-title">John Doe</h4>
+						<p class="card-text">Some example text.</p>
+						<a href="#" class="btn btn-primary">See Profile</a>
+					  </div>
 					</div>
 				</div>
-				<hr noshade></hr>
+				<div class="col-sm-1"></div>
+				<div class="col-sm-3">
+<div class="card" style="width:400px">
+  <img class="card-image" src="svg/trofeu.svg" alt="image">
+  <div class="card-body">
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text.</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+				</div>
+				
+				<div class="col-sm-1"></div>
+				
+				<div class="col-sm-3">
+<div class="card" style="width:400px">
+  <img class="card-image" src="svg/trofeu.svg" alt="image">
+  <div class="card-body">
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text.</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+				</div>
 			</div>
-			<div class="footer" align="center">
-				<a href="https://github.com/santhiagosdp/GamificaSprint" target="resource window"><img src="img/github.png" height="20" width="70" class="media-object  img-responsive img-thumbnail"></a>
-			</div>	
+			<hr noshade></hr>
 		</div>
+		<div class="footer" align="center">
+			<a href="https://github.com/santhiagosdp/GamificaSprint" target="resource window"><img src="img/github.png" height="20" width="70" class="media-object  img-responsive img-thumbnail"></a>
+		</div>	
+	
+    <!--    <div class="flex-center position-ref full-height">
+            @if (Route::has('login'))
+                <div class="top-right links">
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('register') }}">Register</a>
+                    @endauth
+                </div>
+            @endif
+			<img align="left"src="{!! asset('svg/trofeu.svg') !!}">
+            <div class="content">
+				<img align="left"src="{!! asset('svg/trofeu.svg') !!}">
+
+                <div class="links">
+                    <a href="https://github.com/santhiagosdp">GitHub</a>
+                </div>
+            </div>
+        </div> -->
+	</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
