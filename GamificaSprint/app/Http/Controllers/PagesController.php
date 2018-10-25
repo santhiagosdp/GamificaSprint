@@ -17,11 +17,13 @@ class PagesController extends Controller
 $header = array('PRIVATE-TOKEN: 36zGuzvFhSSr2dBY8Bdb');
 
 //milestone $ch = curl_init('http://gitlab.bitstudio.io/api/v4/projects/70/milestones?private_token=36zGuzvFhSSr2dBY8Bdb');
-//projetos geral = $ch = curl_init('http://gitlab.bitstudio.io/api/v4/projects/?private_token=36zGuzvFhSSr2dBY8Bdb');
+//projetos geral = 
+$ch = curl_init('http://gitlab.bitstudio.io/api/v4/projects/?private_token=36zGuzvFhSSr2dBY8Bdb');
 //Issues = $ch = curl_init('http://gitlab.bitstudio.io/api/v4/projects/70/milestones/issues?private_token=36zGuzvFhSSr2dBY8Bdb');
-$ch = curl_init('http://gitlab.bitstudio.io/api/v4/projects/70?private_token=36zGuzvFhSSr2dBY8Bdb');
+//$ch = curl_init('http://gitlab.bitstudio.io/api/v4/projects/70?private_token=36zGuzvFhSSr2dBY8Bdb');
 // buscou projeto especifico = 70 
 
+// para artigo : $ch = curl_init('http://gitlab.exemplo/api/v4/projects/?private_token=<private token fornecido>');
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 //curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
